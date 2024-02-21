@@ -1,5 +1,10 @@
+library(dplyr)
+library(stringr)
+library(data.table)
+  # load packages
+
 query2mermaid = function(q) { 
-  #q = querry
+  # q = querry
   q = str_replace_all(q,"\\n","")
   q = str_replace_all(q,"\\s+=\\s+","=")
   table = str_extract(q,"FROM.+WHERE")
