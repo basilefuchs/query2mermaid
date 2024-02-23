@@ -3,7 +3,7 @@ library(stringr)
 library(data.table)
   # load packages
 
-query2mermaid = function(q) { 
+q2m = function(q) { 
   # q = querry
   q = str_replace_all(q,"\\n","")
   q = str_replace_all(q,"\\s+=\\s+","=")
